@@ -1,0 +1,22 @@
+{
+  "name": "Project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "inquirer": "^6.2.2",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2",
+    "socket.io": "^1.7.3"
+  }
+}
