@@ -14,6 +14,11 @@ $(document).ready(function() {
 
   // Getting jQuery references to the post body, title, form, and category select
   var charName = $("#charName");
+  var charAbilities = $("#charAbilities");
+  var charWeapons = $("#charWeapons");
+  var charOrigin = $("#charOrigin");
+  var charAppearance = $("#charAppearance");
+  var charAffiliations = $("#charAffiliations");
   var charStrength = $("#charStrength");
   var charHealth = $("#charHealth");
   var addCharacterForm = $("#addCharacter")
@@ -23,12 +28,17 @@ $(document).ready(function() {
   $(addCharacterForm).on("submit", function handleFormSubmit(event) {
     event.preventDefault();
     // Wont submit the post if we are missing a body or a title
-    if (!charName.val().trim() || !charStrength.val().trim() || !charHealth.val().trim()) {
+    if (!charName.val().trim() || !charAbilities.val().trim() || !charWeapons.val().trim() || !charOrigin.val().trim() || !charAppearance.val().trim() || !charAffiliations.val().trim() || !charStrength.val().trim() || !charHealth.val().trim()) {
       return;
     }
     // Constructing a newPost object to hand to the database
     var newCharacter = {
       name: charName.val().trim(),
+      abilities: charAbilities.val().trim(),
+      weapons: charWeapons.val().trim(),
+      origin: charOrigin.val().trim(),
+      appearance: charAppearance.val().trim(),
+      affiliations: charAffiliations.val().trim(),
       strength: charStrength.val().trim(),
       health: charHealth.val().trim()
     };
@@ -59,6 +69,11 @@ $(document).ready(function() {
       if (data) {
         // If this post exists, prefill our cms forms with its data
         charName.val(data.name);
+        charAbilities.val(data.abilities);
+        charWeapons.val(data.weapons);
+        charOrigin.val(data.weapons);
+        charAppearance.val(data.appearance);
+        charAffiliations.val(data.affiliations);
         charStrength.val(data.strength);
         charHealth.val(data.health);
         // If we have a post with this id, set a flag for us to know to update the post

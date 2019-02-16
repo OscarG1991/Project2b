@@ -58,21 +58,33 @@ $(document).ready(function() {
     editBtn.text("EDIT");
     editBtn.addClass("edit btn btn-default");
     var newPostName = $("<h2>");
-    var newPostDate = $("<small>");
     var newPostCardBody = $("<div>");
     newPostCardBody.addClass("card-body");
+    var newPostAbilities = $("<p>");
+    var newPostWeapons = $("<p>");
+    var newPostOrigin = $("<p>");
+    var newPostAppearance = $("<p>");
+    var newPostAffiliations = $("<p>");
     var newPostStrength = $("<p>");
     var newPostHealth = $("<p>");
-    newPostName.text(character.name + " ");
-    newPostStrength.text(character.strength);
-    newPostHealth.text(character.health);
-    var formattedDate = new Date(character.createdAt);
-    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
-    newPostDate.text(formattedDate);
-    newPostName.append(newPostDate);
+    newPostName.text("Name: " + character.name);
+    newPostAbilities.text("Abilities: " + character.abilities);
+    newPostWeapons.text("Weapons: " + character.weapons);
+    newPostOrigin.text("Place of Origin: " + character.origin);
+    newPostAppearance.text("First Appearance: " + character.appearance);
+    newPostAffiliations.text("Team Affiliations: " + character.affiliations);
+    newPostStrength.text("Strength: " + character.strength);
+    newPostHealth.text("Health: " + character.health);
+    
+    
     newPostCardHeading.append(deleteBtn);
     newPostCardHeading.append(editBtn);
     newPostCardHeading.append(newPostName);
+    newPostCardBody.append(newPostAbilities);
+    newPostCardBody.append(newPostWeapons);
+    newPostCardBody.append(newPostOrigin);
+    newPostCardBody.append(newPostAppearance);
+    newPostCardBody.append(newPostAffiliations);
     newPostCardBody.append(newPostStrength);
     newPostCardBody.append(newPostHealth);
     newPostCard.append(newPostCardHeading);
@@ -106,7 +118,7 @@ $(document).ready(function() {
     characterContainer.empty();
     var messageH2 = $("<h2>");
     messageH2.css({ "text-align": "center", "margin-top": "50px" });
-    messageH2.html("No posts yet for this category, navigate <a href='/addCharacter'>here</a> in order to create a new post.");
+    messageH2.html("No Characters yet, navigate <a href='/addCharacter'>here</a> in order to create one.");
     characterContainer.append(messageH2);
   }
 

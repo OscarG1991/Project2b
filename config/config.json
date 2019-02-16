@@ -7,14 +7,6 @@
     "port": 8889,
     "dialect": "mysql"
   },
-  "development2": {
-    "username": "root",
-    "password": "root",
-    "database": "characterAdd",
-    "host": "127.0.0.1",
-    "port": 8889,
-    "dialect": "mysql"
-  },
   "test": {
     "username": "root",
     "password": null,

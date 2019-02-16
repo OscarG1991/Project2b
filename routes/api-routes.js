@@ -78,6 +78,11 @@ module.exports = function(app) {
     console.log(req.body);
     db.Character.create({
       name: req.body.name,
+      abilities: req.body.abilities,
+      weapons: req.body.weapons,
+      origin: req.body.origin,
+      appearance: req.body.appearance,
+      affiliations: req.body.affiliations,
       strength: req.body.strength,
       health: req.body.health
     })

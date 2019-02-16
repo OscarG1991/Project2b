@@ -2,9 +2,8 @@
     background-color: slategray;
 }
 
-.nav-link{
-    color: blue;
-    font-weight: bold;
+a {
+  color: white;
 }
 img {
     max-height: 100%;
@@ -88,9 +87,8 @@ button.submit {
   form {
     background: #000;
     padding: 3px;
-    position: fixed;
     bottom: 0;
-    width: 50%;
+    width: 100%;
   }
 
   form input {
@@ -101,10 +99,14 @@ button.submit {
   }
 
   form button {
-    width: 9%;
+    width: 100%;
     background: rgb(130, 224, 255);
     border: none;
     padding: 10px;
+  }
+
+  label {
+    color: white;
   }
 
   #messages {
@@ -120,12 +122,12 @@ button.submit {
   }
 
   #messages li:nth-child(odd) {
-    width: 50%;
+    width: 100%;
     background: #eee;
   }
 
   #messages {
-    width: 50%;
+    width: 100%;
     margin-bottom: 40px;
     /* text-wrap:  */
 
