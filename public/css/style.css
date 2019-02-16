@@ -122,12 +122,12 @@ button.submit {
   }
 
   #messages li:nth-child(odd) {
-    width: 50%;
+    width: 100%;
     background: #eee;
   }
 
   #messages {
-    width: 50%;
+    width: 100%;
     margin-bottom: 40px;
     /* text-wrap:  */
 

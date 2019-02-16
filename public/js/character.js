@@ -58,7 +58,6 @@ $(document).ready(function() {
     editBtn.text("EDIT");
     editBtn.addClass("edit btn btn-default");
     var newPostName = $("<h2>");
-    var newPostDate = $("<small>");
     var newPostCardBody = $("<div>");
     newPostCardBody.addClass("card-body");
     var newPostAbilities = $("<p>");
@@ -77,10 +76,7 @@ $(document).ready(function() {
     newPostStrength.text("Strength: " + character.strength);
     newPostHealth.text("Health: " + character.health);
     
-    var formattedDate = new Date(character.createdAt);
-    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
-    newPostDate.text(formattedDate);
-    newPostName.append(newPostDate);
+    
     newPostCardHeading.append(deleteBtn);
     newPostCardHeading.append(editBtn);
     newPostCardHeading.append(newPostName);
