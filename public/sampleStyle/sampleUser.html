@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./samplecss/sampleStyle.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <title>USER PROFILE PAGE</title>
+</head>
+
+<body>
+
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="./sampleLogin.html" class="brand-logo">Login</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="./sampleHome.html">Home</a></li>
+                <li><a href="./sampleUser.html">User Profile</a></li>
+                <li><a href="./sampleAdd.html">Add Character</a></li>
+                <li><a href="./sampleNewChar.html">Create New Character</a></li>
+                <li><a href="./sampleCMS.html">Newsfeed</a></li>
+                <li><a href="./sampleLogin.html">Create New Account</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="./sampleHome.html">Home</a></li>
+                <li><a href="./sampleUser.html">User Profile</a></li>
+                <li><a href="./sampleAdd.html">Add Character</a></li>
+                <li><a href="./sampleNewChar.html">Create New Character</a></li>
+                <li><a href="./sampleCMS.html">Newsfeed</a></li>
+                <li><a href="./sampleLogin.html">Create New Account</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="bgimg">
+        <div class="topleft">
+            <p>USER PROFILE PAGE</p>
+        </div>
+        <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr>
+            <p> -- days</p>
+        </div>
+        <div class="bottomleft">
+            <p>Under Construction</p>
+        </div>
+
+</body>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+            minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+</html>

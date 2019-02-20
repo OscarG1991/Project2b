@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./samplecss/sampleStyle.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+
+</head>
+
+<header><img src="../images/Marvel-Banner.jpg" width=100%></header>
+
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="./sampleLogin.html" class="brand-logo">Login</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="./sampleHome.html">Home</a></li>
+                <!-- <li><a href="./sampleUser.html" target="_blank">User Profile</a></li> -->
+                <li><a href="./sampleAdd.html">Add Character</a></li>
+                <li><a href="./sampleNewChar.html">Create New Character</a></li>
+                <li><a href="./sampleCMS.html">Newsfeed</a></li>
+                <li><a href="./sampleLogin.html">Create New Account</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="./sampleHome.html" >Home</a></li>
+                <!-- <li><a href="./sampleUser.html" target="_blank">User Profile</a></li> -->
+                <li><a href="./sampleAdd.html">Add Character</a></li>
+                <li><a href="./sampleNewChar.html">Create New Character</a></li>
+                <li><a href="./sampleCMS.html">Newsfeed</a></li>
+                <li><a href="./sampleLogin.html">Create New Account</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <!-- <img src="images/starry-2.jpg" class="bg"> -->
+
+
+    <div id="battle-button">
+        <a class="btn btn-light" href="#">BATTLEMODE
+            COMING SOON!</a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <!-- <div id="leftside"> -->
+                <div class="card">
+                    <div class="card-header">
+                        </h3>Add Character</h3>
+                    </div>
+                    <form id="addCharacter">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="charName">
+                            <br />
+                            <label for="abilities">Abilities:</label>
+                            <input type="text" class="form-control" id="charAbilities">
+                            <br />
+                            <label for="weapons">Weapons:</label>
+                            <input type="text" class="form-control" id="charWeapons">
+                            <br />
+                            <label for="origin">Origin:</label>
+                            <input type="text" class="form-control" id="charOrigin">
+                            <br />
+                            <label for="appearance">First Appearance:</label>
+                            <input type="text" class="form-control" id="charAppearance">
+                            <br />
+                            <label for="affiliate">Team Affiliations:</label>
+                            <input type="text" class="form-control" id="charAffiliations">
+                            <br />
+                            <label for="strength">Strength:</label>
+                            <input type="text" class="form-control" id="charStrength">
+                            <br />
+                            <label for="health">Health:</label>
+                            <input type="text" class="form-control" id="charHealth">
+                            <br />
+                            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        </div>
+                    </form>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-md-7">
+                <div class="card">
+                    <!-- <div id="rightside"> -->
+                    <div class="card-header">
+                        <h3>BLOG SPACE</h3>
+                    </div>
+                    <div id="scrollable">
+                        <div class="blog-container">
+                            BLOGGING GOES HERE
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>NEWSFEED</h3>
+                    </div>
+                    <div id="scrollable">
+                        <div class="newsfeed-container">
+                            APP UPDATES GO HERE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card text-center">
+
+                    <div id="scrollable">
+                        <div class="chatbox">
+                            <!-- <div id="rightside"> -->
+                            <div class="card-chatbox">
+                                Messages Here
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <ul id="messages"></ul>
+                <form action="">
+                    <input id="m" autocomplete="off" /><button class="btn blue-waves-effect waves-light" type="submit"
+                        name="action">Send
+                        <i class="material-icons right">send</i>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Icarus</h5>
+                    <p class="grey-text text-lighten-4">Project 2</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="white-text" href="./sampleHome.html">Home Page</a></li>
+                        <!-- <li><a class="white-text" href="./sampleUser.html" target="_blank">User Profile</a></li> -->
+                        <li><a class="white-text" href="./sampleAdd.html">Add Character</a></li>
+                        <li><a class="white-text" href="./sampleNewChar.html">Create New Character</a></li>
+                        <li><a class="white-text" href="./sampleCMS.html" target="_blank">Newsfeed</a></li>
+                        <li><a class="white-text" href="./sampleLogin.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="https://github.com/OscarG1991" target="_blank"><i class="fab fa-github">
+                                    Oscar</i></a></li>
+                        <li><a class="white-text" href="https://github.com/chico-fa" target="_blank"><i class="fab fa-github">
+                                    Carlo</i></a></li>
+                        <li><a class="white-text" href="https://github.com/BVega03" target="_blank"><i class="fab fa-github">
+                                    Ben</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+        <!-- <p class="bottom"><i class="fab fa-github">Carlo</i> | <i class="fab fa-github">Oscar</i> | <i class="fab fa-github">Ben</i></p> -->
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./parallax-template/js/materialize.min.js"></script>
+    <script src="./parallax-template/js/init.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+
+    <script>
+        $(function () {
+            var socket = io();
+            $('#chat').submit(function () {
+                socket.emit('chat message', $('#m').val());
+                $('#m').val('');
+                return false;
+            });
+            socket.on('chat message', function (msg) {
+                $('#messages').append($('<li>').text(msg)).appendTo('#chatbox');
+                console.log("message fired");
+                window.scrollTo(0, document.body.scrollHeight);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
